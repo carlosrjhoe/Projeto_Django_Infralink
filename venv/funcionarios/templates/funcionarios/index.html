@@ -10,6 +10,18 @@
 
 <body>
     <h1>Aqui será contruido o site dos funcionários da Infralink</h1>
+    <table>
+        <tbody>
+            {% for funcionario in funcionarios %}
+                <tr>
+                    <td><h3>{{ funcionario.nome }}</h3></td>
+                    <td><h3>{{ funcionario.sobreNome }}</h3></td>
+                    <td><h3>{{ funcionario.remuneracao }}</h3></td>
+                    <td><h3>{{ funcionario.tempo_de_servico }}</h3></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 
 </html>
