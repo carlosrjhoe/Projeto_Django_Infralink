@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block context %}
+<h1>Aqui será mostrado a lista de funcionários</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th>Nome</th>
+                <th>Sobre-Nome</th>
+                <th>Salário</th>
+                <th>Tempo de serviço</th>
+            </tr>
+            {% for funcionario in object_list %}
+                <tr>
+                    <td>{{ funcionario.nome }}</td>
+                    <td>{{ funcionario.sobreNome }}</td>
+                    <td>{{ funcionario.remuneracao }}</td>
+                    <td>{{ funcionario.tempo_de_servico }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock context %}

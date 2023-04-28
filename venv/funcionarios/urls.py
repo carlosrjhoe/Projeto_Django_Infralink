@@ -1,7 +1,8 @@
 from django.urls import path
-from . import views
+from .views import IndexTemplateView, FuncionariosListView
 
 
 urlpatterns = [
-    path('', views.ListaFuncionarios.as_view()),
+    path('', IndexTemplateView.as_view()),
+    path('funcionarios/', FuncionariosListView.as_view()),
 ]

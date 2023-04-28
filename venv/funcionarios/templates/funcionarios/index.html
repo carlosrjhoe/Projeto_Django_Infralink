@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionários</title>
-</head>
-
-<body>
-    <h1>Aqui será contruido o site dos funcionários da Infralink</h1>
-    <table>
-        <tbody>
-            {% for funcionario in funcionarios %}
-                <tr>
-                    <td><h3>{{ funcionario.nome }}</h3></td>
-                    <td><h3>{{ funcionario.sobreNome }}</h3></td>
-                    <td><h3>{{ funcionario.remuneracao }}</h3></td>
-                    <td><h3>{{ funcionario.tempo_de_servico }}</h3></td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</body>
-
-</html>
+{% block context %}
+    <h1>
+        Aqui será contruido o site dos funcionários da Infralink
+    </h1>
+{% endblock  %}
+   

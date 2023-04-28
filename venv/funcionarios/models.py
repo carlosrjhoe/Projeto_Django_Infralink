@@ -9,9 +9,5 @@ class Funcionario(models.Model):
     tempo_de_servico = models.PositiveIntegerField(default=0, null=False, blank=True)
     remuneracao = models.DecimalField(max_digits=8, decimal_places=2)
 
-    
-    def __str__(self):
-        return 
-
     objetos = models.Manager()
  
